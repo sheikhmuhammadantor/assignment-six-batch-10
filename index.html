@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paddy | Make Family Happy</title>
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" href="./images/logo.webp" type="image/x-icon">
+    <!-- Google Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Font Family - Inter & Lato -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Daisy UI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind Configuration Setup -->
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: {
+                    lato: ["Lato", "system - ui"],
+                    inter: ["Inter", "system - ui"],
+                },
+                extend: {
+                    colors: {
+                        skyC: '#0e7a81',
+                        grayC: '#595959',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Costume CSS Style -->
+    <style>
+        .activeBtn {
+            border-radius: 999px;
+            border: none;
+            background: #d5f3ff;
+            outline: 4px solid #55bbdd;
+        }
+
+        .autoFill {
+            grid-template-columns: repeat(auto-fill, 250px);
+        }
+    </style>
+</head>
+
+<body class="font-inter">
+
+    <!-- Main Body Section -->
+    <main class="w-[96%] max-w-[1536px] mx-auto ">
+        <!-- Navbar Start -->
+        <section class="">
+            <div class="navbar mt-5">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden text-lg -mb-1">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </div>
+                    <a class="btn btn-ghost flex items-center justify-center gap-2">
+                        <img src="./images/logo.webp" alt="Logo Image">
+                        <h1 class="text-2xl font-bold">Peddy</h1>
+                    </a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-lg font-semibold">
+                        <li><a>Home</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <div class="rounded-full p-2 cursor-pointer border border-skyC">
+                        <img class="h-8" src="./images/user.jpg" alt="User Image">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Navbar End -->
+
+        <!-- Hero Section Start -->
+        <section class="">
+            <div class="hero">
+                <div class="hero-content text-center">
+                    <div class="max-w-md">
+                        <p class="py-6 text-lg font-semibold text-grayC">
+                            Bringing Families Together &nbsp; &nbsp;🔥
+                        </p>
+                        <h1 class="text-5xl font-bold">
+                            Your Path Adoption Starts Here
+                        </h1>
+                        <p class="py-6 text-grayC">
+                            "Your Pet Adoption Starts Here" marks the beginning of bringing a loving animal into your
+                            home. Adopting a pet offers joy, companionship, and a lasting bond. It’s a life-changing
+                            decision that enriches both your life and the pet's.
+                        </p>
+                        <a href="#adoptYourBestFriend"
+                            class="btn bg-skyC text-lg text-white hover:text-black hover:outline outline-2 outline-skyC hover:bg-sky-100 hover:border-none">View
+                            More</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img class="mx-auto" src="./images/pet.webp" alt="Hero Image">
+            </div>
+            <div class="max-w-xl mx-auto text-center mt-10">
+                <h1 id="adoptYourBestFriend" class="text-3xl font-bold">
+                    Adopt Your Best Friend
+                </h1>
+                <p class="py-4 text-grayC">
+                    "Adopt Your Best Friend" invites you to welcome a pet into your life, offering love and
+                    companionship. Adopting a pet creates a lasting bond and brings joy to both of you.
+                </p>
+            </div>
+        </section>
+        <!-- Hero Section End -->
+
+        <!-- Categories Section Start -->
+        <section class="hiden">
+            <div class="hero mt-4">
+                <div class="hero-content flex-col lg:flex-row">
+                    <div id="category-div" class="flex flex-wrap items-center justify-center gap-6">
+                        <!-- <div>
+                            <button class="btn h-14 w-40 border-grayC hover:border-skyC hover:bg-sky-100 activeBtn">
+                            <img src="#" alt="">
+                            <h3 class="text-lg font-bold">Cats</h3>
+                        </button>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Categories Section End -->
+
+        <!-- Main Section Start -->
+        <div class="flex justify-between items-center mt-6">
+            <h3 class="text-2xl font-bold">Best Deal For You</h3>
+            <button id="sort-by-price"
+                class="btn bg-skyC hover:bg-skyC text-lg text-white font-semibold hover:outline outline-2 outline-skyC">Sort
+                By Price</button>
+        </div>
+        <section class="">
+            <section class="flex flex-col justify-between lg:flex-row w-full mt-10 gap-8">
+                <!-- Card Section Start -->
+                <section id="card-section" class="grid autoFill justify-center gap-5 w-full content-start">
+
+                    <!-- No Data For This Page -->
+                    <!-- <div></div> -->
+                </section>
+
+                <!-- Liked SideBar Start -->
+                <section id="liked-side"
+                    class="grid border grid-cols-2 gap-3 place-items-center content-start rounded-lg p-3 min-h-96 min-w-96 max-w-[400px] mx-auto">
+                    <!-- <div class="">
+                        <img class="h-40 w-40 object-cover rounded-md border" src="./images/pet.webp" alt="">
+                    </div> -->
+                </section>
+            </section>
+
+            <!-- Modal Section -->
+            <main>
+                <!-- Details Modal Stare -->
+                <section id="details-modal">
+                    <!-- Here Is Details Modal -->
+                </section>
+                <!-- Details Modal End -->
+
+                <!-- Adopt Modal Stare -->
+                <section class="">
+                    <dialog id="modalTimeOut" class="modal">
+                        <div class="modal-box text-center space-y-4">
+                            <i class="fa-regular fa-handshake text-6xl mt-5"></i>
+                            <h2 class="text-4xl font-bold">Congrats</h2>
+                            <p class="text-lg font-semibold">Adaption Precess is Start For your Pet</p>
+                            <h2 id="modal-count" class="text-5xl font-bold mb-5">3</h2>
+                        </div>
+                    </dialog>
+                </section>
+                <!-- Adopt Modal End -->
+            </main>
+        </section>
+        <!-- Main Section End -->
+    </main>
+
+    <!-- Footer Section Start -->
+    <section class="bg-black mt-14">
+        <footer
+            class="footer text-neutral-content p-10 justify-center items-center md:justify-between w-[96%] max-w-[1536px] mx-auto">
+            <nav class="">
+                <a class="btn btn-ghost flex items-center justify-center gap-2">
+                    <img src="./images/logo.webp" alt="Logo Image">
+                    <h1 class="text-2xl font-bold">Peddy</h1>
+                </a>
+                <a class="link link-hover">Location: av. Washington 165. NY CA</a>
+                <a class="link link-hover">54003</a>
+                <a class="link link-hover">Phone: +31 85 964 47 25</a>
+                <a class="link link-hover">Email: info@yourdomain.com</a>
+                <a class="link link-hover">Openings hours: 9.00 AM - 5.00 PM</a>
+                <div class="flex gap-8 items-center justify-center">
+                    <div class="text-[#0866ff]">
+                        <i class="fa-brands fa-facebook text-3xl"></i>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-x-twitter text-3xl"></i>
+                    </div>
+                    <div class="text-[#ff0000]">
+                        <i class="fa-brands fa-youtube text-3xl"></i>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-instagram text-3xl"></i>
+                    </div>
+                </div>
+            </nav>
+            <nav>
+                <h6 class="footer-title">Useful Links</h6>
+                <a class="link link-hover">Home</a>
+                <a class="link link-hover">About us</a>
+                <a class="link link-hover">Animals</a>
+                <a class="link link-hover">Foundation</a>
+                <a class="link link-hover">Contact</a>
+            </nav>
+            <nav>
+                <h6 class="footer-title">Drop a Massage</h6>
+                <input type="email" placeholder="Enter Your Email"
+                    class="input input-bordered input-primary w-full max-w-xs focus:outline-1 text-grayC bg-slate-700" />
+                <button class="btn btn-block text-xl bg-skyC border-none">Subscribe</button>
+            </nav>
+        </footer>
+    </section>
+    <!-- Footer Section Start -->
+
+
+    <script src="./JS/utility.js"></script>
+    <script src="./JS/script.js"></script>
+</body>
+
+</html>
