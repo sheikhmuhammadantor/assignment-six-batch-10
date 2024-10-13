@@ -1,6 +1,10 @@
 # Peddy | Pet Adoption Platform
+
 ## For Live Page : [Click Here](https://sheikhmuhammadantor.github.io/assignment-six-batch-10/)
+
 ## For Live Link : [Click Here](https://paddyapp.netlify.app/)
+
+## Original Project Repositories : [Link](https://github.com/programming-hero-web-course2/b10a6-pet-adoption-sheikhmuhammadantor)
 
 ## Short description of the project.
 
